@@ -11,7 +11,7 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 
 
       <style>
@@ -19,16 +19,12 @@
           body {
 
             margin: 0;
-            font-family: 'PT Sans Caption', sans-serif;
-            background:linear-gradient(45deg, #dc3b3e, #3b99dc 50%, #3bdc90 75%, rgb(255 141 0) 100%);
+            width: 100%;
+            font-family: 'Noto Sans', sans-serif;
+            background-color: #272b2e;
+            /*background: linear-gradient(45deg, #dc3b3e, #3b99dc 50%, #3bdc90 75%, rgb(255 141 0) 100%);*/
 
             }
-
-          .shadow {
-
-            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-
-          }
 
           .round-border {
 
@@ -39,7 +35,7 @@
           nav {
 
             display: flex;
-            gap: 50px;
+            gap: 100px;
             justify-content: center;
             position: fixed;
             width: 100%;
@@ -53,7 +49,7 @@
             display: inline-block;
             margin-top: 16px;
             font-size: 24pt;
-            font-weight: bolder;
+            font-weight: bold;
             text-decoration: none;
             color: #fff;
 
@@ -65,10 +61,16 @@
 
           }
 
+          .navitem:hover {
+
+            color: #bdc3c7;
+
+          }
+
           #bodycontainer {
 
             display: block;
-            width: 1280px;
+            width: 1080px;
             margin: auto;
 
           }
@@ -99,11 +101,15 @@
             padding-bottom: 10px;
             background-color: #fff;
             font-size: 18pt;
+            color: #272b2e;
 
             }
 
          #title {
 
+           background: linear-gradient(45deg, #dc3b3e, #3b99dc 50%, #3bdc90 75%, rgb(255 141 0) 100%);
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
            text-align: left;
            line-height: 172px;
            font-size: 144pt;
@@ -146,7 +152,7 @@
 
    <body>
 
-      <nav class = "shadow">
+      <nav>
 
         <a class = "navitem" href = "#about">About</a>
         <a class = "navitem" href = "#map">Map</a>
@@ -165,15 +171,13 @@
 
           <div id = "titlecontainer">
 
-            <!--<img src = "images/logo_outline.png" style = "height: 400px;">-->
-
             <h1 id = "title">Pages</br>of</br>Pride</h1>
 
           </div>
 
-          <div class = "card shadow round-border">
+          <div class = "card round-border">
 
-            <p>The LGBT Center of Raleigh is proud to announce <b>Pages of Pride</b>, a family friendly literary festival celebrating all things queer literature!</p>
+            <p>The <a href = "https://www.lgbtcenterofraleigh.com">LGBT Center of Raleigh</a> is proud to announce <b>Pages of Pride</b>, a family friendly literary festival celebrating all things queer literature!</p>
 
             <p>In the face of news about LGBTQ+ centred books being challenged and censored, the Center is providing the Triangle community an opportunity to engage with books, honor the stories of LGBTQ+ people, and celebrate.</p>
 
@@ -185,7 +189,7 @@
 
           <a name = "map"></a>
 
-          <div class = "card shadow round-border">
+          <div class = "card round-border">
 
             <h1>Location:</h1>
 
@@ -197,7 +201,7 @@
 
           </div>
 
-          <div id = "mapframe" class = "shadow round-border" >
+          <div id = "mapframe" class = "round-border" >
 
               <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://maps.google.com/maps?q=apex%20nature%20park&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
 
@@ -209,7 +213,7 @@
 
           <a name = "vendors"></a>
 
-          <div class = "card shadow round-border" style = "float:left;">
+          <div class = "card round-border">
 
             <h1 class = "titles">Vendors</h1>
 
@@ -227,15 +231,15 @@
 
           <a name = "contact"></a>
 
-          <div class = "card shadow round-border">
+          <div class = "card round-border">
 
-            <h1>Contact</h1>
+            <h1 class = "titles">Contact</h1>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.</p>
 
-            <p>Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit.</p>
+            <a href = "http://docs.google.com/forms/d/1XpC2MerjETEfZfAE0v6pPM553Spk_WsndT6gDUD7Ukc/edit?usp=sharing">Volunteer Interest Form</a>
 
-            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit.</p>
+            <a href = "http://docs.google.com/forms/d/1kvs2r84Iu1pS4iegUPLu8DQgfBrUM_7Ejjsx9AzA1qM/edit?usp=sharing">Vendor/Exhibitor Interest Form</a>
 
           </div>
 
