@@ -1,50 +1,144 @@
-
-
 <!DOCTYPE html>
 
 <html lang="en">
 
    <head>
 
+      <meta charset="UTF-8">
+
       <title>Pages of Pride</title>
 
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+
 
       <style>
 
-         body {
+          body {
 
-            font-family: Helvetica;
+            margin: 0;
+            font-family: 'PT Sans Caption', sans-serif;
             background:linear-gradient(45deg, #dc3b3e, #3b99dc 50%, #3bdc90 75%, rgb(255 141 0) 100%);
 
             }
 
-         .body-container {
+          .shadow {
+
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+
+          }
+
+          .round-border {
+
+            border-radius: 8px;
+
+          }
+
+          nav {
+
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            position: fixed;
+            width: 100%;
+            height: 72px;
+            background-color: #272b2e;
+
+          }
+
+          .navitem:link {
+
+            display: inline-block;
+            margin-top: 16px;
+            font-size: 24pt;
+            font-weight: bolder;
+            text-decoration: none;
+            color: #fff;
+
+          }
+
+          .navitem:visited {
+
+            color: #fff;
+
+          }
+
+          #bodycontainer {
 
             display: block;
-            width: 850px;
+            width: 1280px;
             margin: auto;
+
+          }
+
+          #spacer {
+
+            display: block;
+            width: 100%;
+            height: 96px;
+
+          }
+
+          .section {
+
+            display: flex;
+            align-items: stretch;
+            align-content: stretch;
+            justify-content: center;
+            flex-wrap: nowrap;
+            margin-bottom: 24px;
+
+          }
+
+         .card {
+
             padding: 30px;
             padding-top: 10px;
-            border-radius: 8px;
-            margin-top: 20px;
-            box-shadow: 1px 1px 2px #000;
+            padding-bottom: 10px;
             background-color: #fff;
+            font-size: 18pt;
 
             }
 
          #title {
 
-           display: block;
-           margin: auto;
-           text-align: center;
-           font-size: 100pt;
-           font-weight: bold;
+           text-align: left;
+           line-height: 172px;
+           font-size: 144pt;
+           color: #fff;
            font-family: 'Gentium Book Basic', serif;
+           margin-top: 0;
+           margin-bottom: 0;
 
             }
+
+        #titlecontainer {
+
+          display: flex;
+          justify-content: center;
+          margin-right: 20px;
+
+        }
+
+        #mapframe {
+
+          display: block;
+          flex-grow: 1;
+          margin-left: 20px;
+          overflow: hidden;
+
+        }
+
+        .titles {
+
+          text-align: center;
+          font-size: 48pt;
+          font-weight: bolder;
+          line-height: 6px;
+
+        }
 
       </style>
 
@@ -52,29 +146,100 @@
 
    <body>
 
-      <div class = "body-container">
+      <nav class = "shadow">
 
-        <h1 id = "title">Pages of Pride</h1>
+        <a class = "navitem" href = "#about">About</a>
+        <a class = "navitem" href = "#map">Map</a>
+        <a class = "navitem" href = "#vendors">Vendors</a>
+        <a class = "navitem" href = "#contact">Contact</a>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. </p>
+      </nav>
 
-        <p>Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. </p>
+      <div id = "bodycontainer">
 
-        <p>Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. </p>
+        <section id = "spacer"></section>
 
-        <p>Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. </p>
+        <section class = "section">
 
-        <p>Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. </p>
+          <a name = "about"></a>
 
-        <p>Aenean laoreet. Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed pretium blandit orci. Ut eu diam at pede suscipit sodales. Aenean lectus elit, fermentum non, convallis id, sagittis at, neque. Nullam mauris orci, aliquet et, iaculis et, viverra vitae, ligula. Nulla ut felis in purus aliquam imperdiet. Maecenas aliquet mollis lectus. Vivamus consectetuer risus et tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+          <div id = "titlecontainer">
 
-        <p>Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. </p>
+            <!--<img src = "images/logo_outline.png" style = "height: 400px;">-->
 
-        <p>Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. </p>
+            <h1 id = "title">Pages</br>of</br>Pride</h1>
 
-        <p>Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. </p>
+          </div>
 
-        <p>Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. </p>
+          <div class = "card shadow round-border">
+
+            <p>The LGBT Center of Raleigh is proud to announce <b>Pages of Pride</b>, a family friendly literary festival celebrating all things queer literature!</p>
+
+            <p>In the face of news about LGBTQ+ centred books being challenged and censored, the Center is providing the Triangle community an opportunity to engage with books, honor the stories of LGBTQ+ people, and celebrate.</p>
+
+          </div>
+
+        </section>
+
+        <section class = "section">
+
+          <a name = "map"></a>
+
+          <div class = "card shadow round-border">
+
+            <h1>Location:</h1>
+
+            <p>Apex Nature Park - Amphitheatre and Large Shelter</br>2600 Evans Road</br>Apex, NC</br>27502</p>
+
+            <h1>Date:</h1>
+
+            <p>May 22, 2022</br>11 AM - 3 PM</p>
+
+          </div>
+
+          <div id = "mapframe" class = "shadow round-border" >
+
+              <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://maps.google.com/maps?q=apex%20nature%20park&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+
+          </div>
+
+        </section>
+
+        <section class = "section">
+
+          <a name = "vendors"></a>
+
+          <div class = "card shadow round-border" style = "float:left;">
+
+            <h1 class = "titles">Vendors</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.</p>
+
+            <p>Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit.</p>
+
+            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit.</p>
+
+          </div>
+
+        </section>
+
+        <section class = "section">
+
+          <a name = "contact"></a>
+
+          <div class = "card shadow round-border">
+
+            <h1>Contact</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.</p>
+
+            <p>Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit.</p>
+
+            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit.</p>
+
+          </div>
+
+        </section>
 
       </div>
 
