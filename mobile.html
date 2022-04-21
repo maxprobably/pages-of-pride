@@ -22,7 +22,7 @@
        margin: 0;
        width: 100%;
        font-family: 'Noto Sans', sans-serif;
-       font-size: medium;
+       font-size: 20pt;
        background-color: #272b2e;
 
        }
@@ -33,6 +33,25 @@
 
      }
 
+     #bodycontainer {
+
+       display: block;
+       width: 100%;
+       margin: auto;
+       overflow: hidden;
+
+     }
+
+     .section {
+
+       display: flex;
+       align-items: stretch;
+       align-content: stretch;
+       justify-content: stretch;
+       margin-bottom: 2.5%;
+
+     }
+
      .card {
 
         padding: 30px;
@@ -40,7 +59,6 @@
         padding-bottom: 20px;
         margin-left: 2.5%;
         margin-right: 2.5%;
-        margin-bottom: 2.5%;
         background-color: #fff;
         color: #272b2e;
 
@@ -64,6 +82,13 @@
 
         }
 
+      #mapframe {
+
+        display: block;
+        overflow: hidden;
+
+        }
+
   </style>
 
    <body>
@@ -71,10 +96,6 @@
      <div id = "bodycontainer">
 
        <section id = "spacer"></section>
-
-       <section class = "section">
-
-         <a name = "about"></a>
 
          <div id = "titlecontainer">
 
@@ -96,11 +117,7 @@
 
          </div>
 
-       </section>
-
        <section class = "section">
-
-         <a name = "map"></a>
 
          <div class = "card round-border">
 
