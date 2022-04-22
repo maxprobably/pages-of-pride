@@ -1,0 +1,51 @@
+body {
+
+font-size: 32pt;
+
+}
+
+#bodywrapper {
+
+width: 95%;
+flex-direction: column;
+row-gap: 0.4em;
+
+}
+
+nav {
+
+height: 2.5em;
+
+}
+
+#spacer {
+
+height: 3.5em;
+
+}
+
+.flexbreak {
+
+flex-basis: 0;
+height: 0;
+width: 0;
+
+}
+
+#herobox {
+
+text-align: center;
+
+}
+
+#herophoto {
+
+width: 50%;
+
+}
+
+#mapframe {
+
+height: 500px;
+
+}

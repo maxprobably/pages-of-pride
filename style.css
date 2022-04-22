@@ -1,0 +1,51 @@
+body {
+
+font-size: 14pt;
+
+}
+
+#bodywrapper {
+
+width: 60%;
+flex-direction: row;
+row-gap: 0.55em;
+column-gap: 1.25em;
+
+}
+
+nav {
+
+height: 3em;
+
+}
+
+#spacer {
+
+height: 4em;
+
+}
+
+.navitem:link {
+
+font-size: 1.2em;
+
+}
+
+#herobox {
+
+width: 350px;
+text-align: left;
+
+}
+
+#herophoto {
+
+width: 100%;
+
+}
+
+#herotitle {
+
+line-height: 0.9em;
+
+}
