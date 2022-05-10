@@ -91,6 +91,8 @@
     padding-bottom: 0.75em;
     padding-left: 1.5em;
     padding-right: 1.5em;
+    overflow: hidden;
+    flex-shrink: 1;
 
     }
 
@@ -120,6 +122,43 @@
 
     }
 
+    #contactlist {
+
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+
+    }
+
+    .contactitem {
+
+    flex-grow: 1;
+    text-decoration: none;
+    font-weight: bolder;
+    background-color: #272b2e;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+    font-size: 1.5em;
+    border-radius: 0.25em;
+
+    }
+
+    #email {
+
+    text-align: center;
+    line-height: 1.25em;
+
+
+    }
+
+    h1 {
+
+    line-height: 0.5em;
+    font-weight: bold;
+
+    }
+
     </style>
 
   </head>
@@ -128,14 +167,13 @@
 
     <!--Navigation bar-->
     <nav>
-      <a class = "navitem" href = "#about">About</a>
-      <a class = "navitem" href = "#map">Map</a>
-      <a class = "navitem" href = "#vendors">Vendors</a>
-      <a class = "navitem" href = "#contact">Contact</a>
+      <a class="navitem" href="#about">About</a>
+      <a class="navitem" href="#map">Map</a>
+      <a class="navitem" href="#contact">Contact</a>
     </nav>
 
     <!--Invisible spacer to offset body from under navigation bar-->
-    <div id = "spacer"></div>
+    <div id="spacer"></div>
 
     <a name="about"></a>
 
@@ -144,34 +182,53 @@
 
       <!--Title/logo box-->
       <div id="herobox">
-        <img id="herophoto" src="images/logo.png">
-        <h1 id="herotitle">Pages of Pride</h1>
+        <img src="images/logo_outline.png" id="herophoto">
+        <!--<img id="herophoto" src="images/logo.png"/>
+        <h1 id="herotitle">Pages of Pride</h1>-->
       </div>
 
       <!--About section-->
       <article class="card">
         <p>The <a href = "https://www.lgbtcenterofraleigh.com">LGBT Center of Raleigh</a> is proud to announce <b>Pages of Pride</b>, a family friendly literary festival celebrating all things queer literature!</p>
         <p>In the face of news about LGBTQ+ centred books being challenged and censored, the Center is providing the Triangle community an opportunity to engage with books, honor the stories of LGBTQ+ people, and celebrate.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.</p>
-        <!--<img src="https://www.lgbtcenterofraleigh.com/images/center-logos/official/registered/LGBT_Center_of_Raleigh_4-color_Horizontal_RGB_logo.jpg" style="width:80%">-->
       </article>
 
       <!--Line break for elements-->
       <div class="flexbreak"></div>
 
       <!--Location section-->
-      <article class="card">
+      <div class="card">
         <h1>Location:</h1>
         <p>Apex Nature Park</br>Amphitheatre and Large Shelter</br>2600 Evans Road</br>Apex, NC</br>27502</p>
         <h1>Date:</h1>
-        <p>May 22, 2022</br>11 AM - 3 PM</p>
-      </article>
+        <p>May 22, 2022</br>11 AM to 3 PM</p>
+      </div>
 
       <!--Map section-->
       <div id="mapframe" class="card">
           <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://maps.google.com/maps?q=apex%20nature%20park&t=&z=13&ie=UTF8&iwloc=&output=embed">
           </iframe>
       </div>
+
+      <!--Line break for elements-->
+      <div class="flexbreak"></div>
+
+      <!--Interest forms-->
+      <div class="card">
+        <div id="contactlist">
+          <a class="contactitem" href="https://forms.gle/EVy5tDnRecHVZjgQA">Exhibitor</br>Expression of</br>Interest Form</a>
+          <a class="contactitem" href="https://forms.gle/9HJLJfyCjF94BbjVA">Volunteer</br>Application</br>Form</a>
+        </div>
+        <div id="email">
+          <h2>Email: <a href="mailto:library@lgbtcenterofraleigh.com">library@lgbtcenterofraleigh.com</a></h2>
+        </div>
+      </div>
+
+      <!--Line break for elements-->
+      <div class="flexbreak"></div>
+
+      <footer>
+      </footer>
 
     </div>
 

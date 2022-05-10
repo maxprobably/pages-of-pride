@@ -10,6 +10,8 @@ width: 60%;
 flex-direction: row;
 row-gap: 0.55em;
 column-gap: 1.25em;
+min-width: 720px;
+overflow: scroll;
 
 }
 
@@ -33,6 +35,7 @@ font-size: 1.2em;
 
 #herobox {
 
+flex-shrink: 1;
 width: 350px;
 text-align: left;
 
